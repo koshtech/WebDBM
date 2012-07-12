@@ -1,0 +1,9 @@
+<h1>Show me your credentials!</h1>
+
+<%= form_for login_path, :method => :post do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <%= f.submit t("login") %>
+<% end %>

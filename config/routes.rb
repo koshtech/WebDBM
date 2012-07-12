@@ -1,5 +1,7 @@
 Webdbm::Application.routes.draw do
-  resources :testes
+
+  root :to => 'home#index'
+  post 'login', :to => 'home#login'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

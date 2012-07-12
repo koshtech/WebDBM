@@ -1,0 +1,13 @@
+MySQL Commands:
+
+@connection = ActiveRecord::Base.establish_connection :username => 'root', :password => '', :adapter => 'mysql2', :database => '', :host => "localhost", :port => 3306
+b = @connection.connection.execute("show databases;")
+b.each do |name| puts name.first end
+
+@c = ActiveRecord::Base.establish_connection :username => 'postgres', :password => 'postgres', :adapter => 'postgresql', :database => '', :host => 'localhost', :port => '5432'
+b = @c.connection.execute('select * from pg_database;')
+b.each do |base| puts base['datname'] end
+
+
+
+http://kovyrin.github.com/db-charmer/
