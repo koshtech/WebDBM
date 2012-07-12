@@ -33,4 +33,4 @@ _yardoc
 doc/
 .rvmrc
 .Gemfile.lock
-.swp
+*.swp
