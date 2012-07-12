@@ -9,11 +9,7 @@ class HomeController < ApplicationController
   private
 
   def database_auth(username, password)
-    db_auth = DatabaseAuth.new(username, password)
-    if db_auth.connected?
-      redirect '/databases'
-    else
-      redirect '/'
-    end
+    db_auth = Datab.new(username, password)
+    redirect_to '/'
   end
 end
