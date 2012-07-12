@@ -31,3 +31,5 @@ tmp
 .yardoc
 _yardoc
 doc/
+.rvmrc
+.Gemfile.lock
