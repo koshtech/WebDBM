@@ -2,14 +2,14 @@ class HomeController < ApplicationController
   def index
   end
 
-  def login
-    database_auth(params[:username], params[:password])
+  def databases
+    db = database_auth(params[:username], params[:password])
+    @database = db.execute("show databases;")
   end
 
   private
 
   def database_auth(username, password)
-    db_auth = Datab.new(username, password)
-    redirect_to '/'
+    Datab.new(username, password)
   end
 end

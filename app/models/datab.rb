@@ -1,4 +1,4 @@
-class Datab < ActiveRecord::Base
+class Datab
 
   def initialize(user, pass)
     @user = user
@@ -6,7 +6,7 @@ class Datab < ActiveRecord::Base
   end
 
   def execute(cmd)
-    #self.connect
+    connect
     @connection.connection.execute(cmd)
   end
 
