@@ -8,7 +8,8 @@ gem 'rails', '3.2.6'
 gem 'sqlite3'
 gem 'mysql2'
 gem 'pg'
-#Buggy gem 'db-charmer', :require => 'db_charmer'
+#gem 'db-charmer', :require => 'db_charmer'
+gem 'db-charmer', :require => 'db_charmer', :git => 'git://github.com/janpaul/db-charmer.git', :branch => 'master'
 
 # Gems used only for assets and not required
 # in production environments by default.
