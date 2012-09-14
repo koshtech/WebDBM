@@ -8,6 +8,10 @@ gem 'rails', '3.2.6'
 gem 'sqlite3'
 gem 'mysql2'
 gem 'pg'
+gem 'execjs'
+gem 'therubyracer'
+gem 'authlogic'
+
 #Buggy gem 'db-charmer', :require => 'db_charmer'
 
 # Gems used only for assets and not required

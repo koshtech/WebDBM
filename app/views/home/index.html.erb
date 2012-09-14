@@ -2,7 +2,7 @@
 
 <p>Fill with your db credentials</p>
 
-<%= form_for :login, :url => databases_path, :method => :post do |f| %>
+<%= form_for :login, :url => signup_path, :method => :post do |f| %>
   <%= f.label :username %>
   <%= f.text_field :username %><br />
   <%= f.label :password %>
